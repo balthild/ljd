@@ -43,7 +43,7 @@ STATEMENT_WHILE = 8
 
 STATEMENT_FUNCTION = 9
 
-VALID_IDENTIFIER = re.compile(r'^[a-zA-Z_][\w]*$')
+VALID_IDENTIFIER = re.compile(r'^(?:[a-zA-Z_]|[^0x00-0x7F])(?:\w|[^0x00-0x7F])*$')
 
 RESERVED_WORDS = [
     "and",
